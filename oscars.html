@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<title>Academy Awards (Oscars) from 1960 to 2010</title>
+
+<head>
+  <style>
+    .centred {
+      text-align: center;
+    }
+
+    .formSpace {
+      margin: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="centred">Academy Awards (Oscars) from 1960 to 2010</h1>
+  <form action="oscars.php" method="GET" class="centred">
+    <fieldset>
+      <label for="year">Year</label>
+      <select id="filterYear" name="filteredYear" autocomplete="off">
+        <option value="yearUnrestricted">unrestricted</option>
+        <option value="yearContains">contains</option>
+      </select>
+      <input type="text" id="enterYear" name="enteredYear" class="formSpace" autocomplete="off"><br />
+
+      <label for="category">Category</label>
+      <select id="filterCategory" name="filteredCategory" autocomplete="off">
+        <option value="categoryUnrestricted">unrestricted</option>
+        <option value="categoryContains">contains</option>
+      </select>
+      <input type="text" id="enterCategory" name="enteredCategory" class="formSpace" autocomplete="off"><br />
+
+      <label for="nominee">Nominee</label>
+      <select id="filterNominee" name="filteredNominee" autocomplete="off">
+        <option value="nomineeUnrestricted">unrestricted</option>
+        <option value="nomineeContains">contains</option>
+      </select>
+      <input type="text" id="enterNominee" name="enteredNominee" class="formSpace" autocomplete="off"><br />
+
+      <label for="info">Info</label>
+      <select id="filterInfo" name="filteredInfo" autocomplete="off">
+        <option value="infoUnrestricted">unrestricted</option>
+        <option value="infoContains">contains</option>
+      </select>
+      <input type="text" id="enterInfo" name="enteredInfo" class="formSpace" autocomplete="off"><br /><br />
+
+      <label for="nomType">Nomination type</label>
+      <select id="filterNomType" name="filteredNomType" autocomplete="off">
+        <option value="allNoms">all nominations</option>
+        <option value="winners">winners only</option>
+        <option value="nonWinners">non winners only</option>
+      </select><br /><br />
+      <input type="reset" id="reset" class="formSpace" value="reset form" />
+      <input type="submit" id="results" class="formSpace" value="view results">
+    </fieldset>
+  </form>
+</body>
+
+</html>
